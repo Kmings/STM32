@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"breathled\startup_stm32f407xx.o"
+"breathled\main.o"
+"breathled\gpio.o"
+"breathled\tim.o"
+"breathled\stm32f4xx_it.o"
+"breathled\stm32f4xx_hal_msp.o"
+"breathled\stm32f4xx_hal_tim.o"
+"breathled\stm32f4xx_hal_tim_ex.o"
+"breathled\stm32f4xx_hal_rcc.o"
+"breathled\stm32f4xx_hal_rcc_ex.o"
+"breathled\stm32f4xx_hal_flash.o"
+"breathled\stm32f4xx_hal_flash_ex.o"
+"breathled\stm32f4xx_hal_flash_ramfunc.o"
+"breathled\stm32f4xx_hal_gpio.o"
+"breathled\stm32f4xx_hal_dma_ex.o"
+"breathled\stm32f4xx_hal_dma.o"
+"breathled\stm32f4xx_hal_pwr.o"
+"breathled\stm32f4xx_hal_pwr_ex.o"
+"breathled\stm32f4xx_hal_cortex.o"
+"breathled\stm32f4xx_hal.o"
+"breathled\stm32f4xx_hal_exti.o"
+"breathled\system_stm32f4xx.o"
+--strict --scatter "BreathLED\BreathLED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BreathLED.map" -o BreathLED\BreathLED.axf

@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"melodybeep\startup_stm32f407xx.o"
+"melodybeep\main.o"
+"melodybeep\gpio.o"
+"melodybeep\tim.o"
+"melodybeep\stm32f4xx_it.o"
+"melodybeep\stm32f4xx_hal_msp.o"
+"melodybeep\stm32f4xx_hal_tim.o"
+"melodybeep\stm32f4xx_hal_tim_ex.o"
+"melodybeep\stm32f4xx_hal_rcc.o"
+"melodybeep\stm32f4xx_hal_rcc_ex.o"
+"melodybeep\stm32f4xx_hal_flash.o"
+"melodybeep\stm32f4xx_hal_flash_ex.o"
+"melodybeep\stm32f4xx_hal_flash_ramfunc.o"
+"melodybeep\stm32f4xx_hal_gpio.o"
+"melodybeep\stm32f4xx_hal_dma_ex.o"
+"melodybeep\stm32f4xx_hal_dma.o"
+"melodybeep\stm32f4xx_hal_pwr.o"
+"melodybeep\stm32f4xx_hal_pwr_ex.o"
+"melodybeep\stm32f4xx_hal_cortex.o"
+"melodybeep\stm32f4xx_hal.o"
+"melodybeep\stm32f4xx_hal_exti.o"
+"melodybeep\system_stm32f4xx.o"
+--strict --scatter "MelodyBEEP\MelodyBEEP.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MelodyBEEP.map" -o MelodyBEEP\MelodyBEEP.axf

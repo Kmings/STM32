@@ -1,0 +1,62 @@
+Configuration	LEDtest
+STM32CubeMX 	6.13.0
+Date	01/10/2025
+MCU	STM32F407ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+19	PF7	GPIO_Output	
+20	PF8	GPIO_Output	
+21	PF9	GPIO_Output	
+22	PF10	GPIO_Output	
+54	PF14	GPIO_Output	
+55	PF15	GPIO_Output	
+56	PG0	GPIO_Output	
+57	PG1	GPIO_Output	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+19	PF7	GPIO_Output	
+20	PF8	GPIO_Output	
+21	PF9	GPIO_Output	
+22	PF10	GPIO_Output	
+54	PF14	GPIO_Output	
+55	PF15	GPIO_Output	
+56	PG0	GPIO_Output	
+57	PG1	GPIO_Output	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : LEDtest
+Project Folder : C:\Users\penguin\Documents\STM\projects\LEDtest
+Toolchain / IDE : MDK-ARM V5.32
+Firmware Package Name and Version : STM32Cube FW_F4 V1.28.1
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+

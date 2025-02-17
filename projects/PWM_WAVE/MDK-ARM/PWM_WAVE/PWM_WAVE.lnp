@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"pwm_wave\startup_stm32f407xx.o"
+"pwm_wave\main.o"
+"pwm_wave\gpio.o"
+"pwm_wave\tim.o"
+"pwm_wave\stm32f4xx_it.o"
+"pwm_wave\stm32f4xx_hal_msp.o"
+"pwm_wave\stm32f4xx_hal_tim.o"
+"pwm_wave\stm32f4xx_hal_tim_ex.o"
+"pwm_wave\stm32f4xx_hal_rcc.o"
+"pwm_wave\stm32f4xx_hal_rcc_ex.o"
+"pwm_wave\stm32f4xx_hal_flash.o"
+"pwm_wave\stm32f4xx_hal_flash_ex.o"
+"pwm_wave\stm32f4xx_hal_flash_ramfunc.o"
+"pwm_wave\stm32f4xx_hal_gpio.o"
+"pwm_wave\stm32f4xx_hal_dma_ex.o"
+"pwm_wave\stm32f4xx_hal_dma.o"
+"pwm_wave\stm32f4xx_hal_pwr.o"
+"pwm_wave\stm32f4xx_hal_pwr_ex.o"
+"pwm_wave\stm32f4xx_hal_cortex.o"
+"pwm_wave\stm32f4xx_hal.o"
+"pwm_wave\stm32f4xx_hal_exti.o"
+"pwm_wave\system_stm32f4xx.o"
+--strict --scatter "PWM_WAVE\PWM_WAVE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_WAVE.map" -o PWM_WAVE\PWM_WAVE.axf
