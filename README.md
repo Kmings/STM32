@@ -1,2 +1,2 @@
 # STM32
-projects of learning STM32
+basics of STM32
